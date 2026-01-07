@@ -8,7 +8,7 @@ This project recreates the Figma home page design using Nuxt 3.
 *   **Language**: TypeScript
 
 ## Hosted Link
-> [Insert your hosted URL here, e.g., Netlify/Vercel link]
+> ['https://695dfdf81d1643ea199706ab--rainbow-profiterole-9e236b.netlify.app/']
 
 ## Deliverables
 *   **Repository**: [Link to this repo]
@@ -30,7 +30,7 @@ This project recreates the Figma home page design using Nuxt 3.
     ```
 
 ## Notes on Tradeoffs
-<<<<<<< Updated upstream
+
 *   Coordinates vs Layout: I interpreted these as standard sections (Header at top, followed by Hero, Pricing, Footer) rather than placing elements at absolute pixels, to ensure responsiveness and standard web flow.
 =======
 *   **Coordinates vs Layout**: The provided Figma dump contained absolute positioning coordinates. I interpreted these as standard sections (Header at top, followed by Hero, Pricing, Footer) rather than placing elements at absolute pixels, to ensure responsiveness and standard web flow.
