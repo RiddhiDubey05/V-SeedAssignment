@@ -5,7 +5,8 @@ export default <Config>{
     theme: {
         extend: {
             colors: {
-                primary: '#8A38F5',
+                primary: '#0F172A',
+                accent: '#F59E0B',
             },
             fontFamily: {
                 sans: ['Inter', 'sans-serif'],

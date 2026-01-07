@@ -8,6 +8,8 @@ useHead({
     lang: 'en'
   }
 })
+
+const isModalOpen = ref(false)
 </script>
 
 <template>
@@ -15,44 +17,44 @@ useHead({
     <TheHeader />
     
     <main>
-       <!-- Hero section - recreated from Figma design -->
-       <section class="relative pt-[100px] pb-32 overflow-hidden">
-          <!-- Background glow effect -->
-          <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-[#8A38F5]/10 rounded-full blur-3xl -z-10"></div>
+        <section class="relative pt-[60px] pb-24 px-4 md:px-6">
+           
+           <div class="max-w-[1440px] mx-auto flex flex-col items-center">
+                <div class="w-full bg-[#0F172A] rounded-[40px] overflow-hidden relative text-center py-20 px-6 md:px-20 lg:px-32 shadow-2xl">
+                    
+                    <div class="absolute inset-0 opacity-20 pointer-events-none" 
+                         style="background-image: linear-gradient(#334155 1px, transparent 1px), linear-gradient(to right, #334155 1px, transparent 1px); background-size: 40px 40px;">
+                    </div>
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-blue-500/20 rounded-full blur-[120px] pointer-events-none"></div>
 
-          <div class="max-w-[1440px] mx-auto px-6 flex flex-col items-center text-center gap-12">
-                  <!-- Hero Content Box -->
-                  <div class="max-w-4xl w-full bg-white/60 backdrop-blur-md rounded-3xl p-8 md:p-12 border border-white/50 shadow-2xl space-y-8">
-                      <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-gray-900 leading-tight">
-                        Launch features confidently using <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#8A38F5] to-purple-600">AI driven feature flags</span>
-                      </h1>
-                      <p class="text-sm uppercase tracking-widest text-[#8A38F5] font-bold">
-                        Start for free
-                      </p>
-                      <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
-                          <button class="px-10 py-5 bg-[#8A38F5] text-white rounded-full font-bold text-lg hover:bg-opacity-90 transition-transform hover:scale-105 shadow-xl shadow-[#8A38F5]/20">
-                            Start for $1/month
-                          </button>
-                          <button class="px-10 py-5 bg-white text-gray-900 border border-gray-200 rounded-full font-bold text-lg hover:border-[#8A38F5] transition-colors">
-                            Join early access
-                          </button>
-                      </div>
-                  </div>
+                    <div class="relative z-10 max-w-5xl mx-auto space-y-12">
+                        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-tight">
+                          Launch Features Confidently With
+                          <span class="block mt-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-indigo-200">AI Driven Feature Flags</span>
+                        </h1>
+                        
+                        <p class="text-gray-300 text-lg md:text-xl font-medium tracking-wide max-w-3xl mx-auto">
+                          Start for free, scale as your team grows
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row justify-center gap-6 pt-8">
+                            <button @click="isModalOpen = true" class="px-10 py-4 bg-white text-[#0F172A] rounded-lg font-bold text-lg hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
+                              Start for $1/mo
+                            </button>
+                            <button @click="isModalOpen = true" class="px-10 py-4 bg-transparent border border-white/30 text-white rounded-lg font-bold text-lg hover:border-white hover:bg-white/5 transition-all">
+                              Join AI Early Access
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
 
-               <!-- Trusted Companies -->
-               <div class="w-full max-w-[1024px] pt-16">
-                   <p class="text-gray-500 mb-8 text-sm font-medium uppercase tracking-wider">Trusted by industry leaders</p>
-                   <div class="flex flex-wrap justify-center gap-12 items-center opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-                      <span class="text-xl font-bold text-gray-800">ACME Corp</span>
-                      <span class="text-xl font-bold text-gray-800">GlobalTech</span>
-                      <span class="text-xl font-bold text-gray-800">Nebula</span>
-                      <span class="text-xl font-bold text-gray-800">FoxRun</span>
-                      <span class="text-xl font-bold text-gray-800">Circle</span>
-                   </div>
-               </div>
-          </div>
-       </section>
+                <div class="w-full max-w-[1024px] pt-16 text-center">
+                </div>
+           </div>
+        </section>
+
+        <TheModal :isOpen="isModalOpen" @close="isModalOpen = false" />
 
        <PricingFeatures />
 
@@ -72,15 +74,15 @@ useHead({
                    </p>
                    <ul class="space-y-3">
                        <li class="flex items-center text-gray-700">
-                           <span class="w-6 h-6 rounded-full bg-[#8A38F5]/10 text-[#8A38F5] flex items-center justify-center mr-3 text-sm">✓</span>
+                           <span class="w-6 h-6 rounded-full bg-[#0F172A]/10 text-[#0F172A] flex items-center justify-center mr-3 text-sm">✓</span>
                            Real-time sync
                        </li>
                         <li class="flex items-center text-gray-700">
-                           <span class="w-6 h-6 rounded-full bg-[#8A38F5]/10 text-[#8A38F5] flex items-center justify-center mr-3 text-sm">✓</span>
+                           <span class="w-6 h-6 rounded-full bg-[#0F172A]/10 text-[#0F172A] flex items-center justify-center mr-3 text-sm">✓</span>
                            Advanced security
                        </li>
                         <li class="flex items-center text-gray-700">
-                           <span class="w-6 h-6 rounded-full bg-[#8A38F5]/10 text-[#8A38F5] flex items-center justify-center mr-3 text-sm">✓</span>
+                           <span class="w-6 h-6 rounded-full bg-[#0F172A]/10 text-[#0F172A] flex items-center justify-center mr-3 text-sm">✓</span>
                            API Access
                        </li>
                    </ul>
