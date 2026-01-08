@@ -1,8 +1,9 @@
-**Homepage Recreation (Nuxt 3 + Vue 3 + TailwindCSS)**
+***Homepage Recreation — Nuxt 3***
 
-This project recreates the Figma home page design using Nuxt 3, fully responsive, with a mobile menu toggle as the interactive element.
+This project recreates the provided Figma home page design using Nuxt 3, focusing on visual fidelity, responsiveness, and clean component structure.
+Pixelay was used to verify layout accuracy against the original design.
 
-**Tech Stack**
+***Tech Stack***
 
 Framework: Nuxt 3 (Vue 3)
 
@@ -10,9 +11,10 @@ Styling: TailwindCSS
 
 Language: TypeScript
 
+**Live Demo**
 **Live Project link** :['https://695f039362ee6a8df70222f8--ventureseedassignment.netlify.app/']
 
-**Features**
+***Features***
 
 Fully responsive (desktop + mobile)
 
