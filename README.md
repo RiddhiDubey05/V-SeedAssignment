@@ -27,7 +27,8 @@ Verified layout with Pixelay
 <img width="1920" height="903" alt="Screenshot (488)" src="https://github.com/user-attachments/assets/296fe405-1c82-4427-81e3-1122186db247" />
 <img width="1920" height="903" alt="Screenshot (486)" src="https://github.com/user-attachments/assets/37f7ffce-af5d-4ae3-8eee-1653dd8fd4ee" />
 <img width="1920" height="909" alt="Screenshot (490)" src="https://github.com/user-attachments/assets/af65f184-0995-412e-bae9-0d115b71246f" />
-<img width="1920" height="1080" alt="Screenshot (487)" src="https://github.com/user-attachments/assets/c35020b3-4d6c-4468-9b76-af77d875c03d" />
+<img width="1920" height="910" alt="Screenshot (487)" src="https://github.com/user-attachments/assets/0388c6f3-68d9-4af5-ad7b-7799195f4ad4" />
+
 
 **notes.md** :
 
